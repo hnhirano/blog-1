@@ -13,7 +13,6 @@
 
 <title>My first story</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -26,15 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 
 
@@ -65,7 +55,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -345,21 +334,21 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fas fa-home"></span>
+    <span class="fa fa-home"></span>
      
     Home
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fas fa-user-check"></span>
+    <span class="fa fa-user-check"></span>
      
     About Me
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fas fa-newspaper"></span>
+    <span class="fa fa-newspaper"></span>
      
     Blog
      
@@ -378,25 +367,25 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:bbaumer@smith.edu">
-    <span class="fas fa-envelope"></span>
+    <span class="fa fa-envelope"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.github.com/beanumber">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.twitter.com/BaumerBen">
-    <span class="fas fa-twitter"></span>
+    <span class="fa fa-twitter"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/ben-baumer-809b3a75">
-    <span class="fas fa-linkedin"></span>
+    <span class="fa fa-linkedin"></span>
      
   </a>
 </li>
@@ -414,7 +403,9 @@ div.tocify {
 </div>
 
 
-<p>It was a dark and stormy night…</p>
+<p>The beauty of data science is that it often provides audiences with information clearly and instantly based on numerical evidence. For instance, I created a 3D visualiation about how people migrantes in the world using data from the United Nations. It showed where migrants come from and where they go. Media often gives the audience the impression that most of the migrants come from the Middle East area and go to North America or Europe. However, the visualization illustrated that intra-migration, migration of people within an area, is more common. A surprising number of people moved within western Europe or eastern Europe.</p>
+<p>As products of data science deliver convincing facts and messages, data scientists need to keep in mind how they can go wrong.</p>
+<p><em>Data Feminism</em> introduced several actual incidents about when it worked well and when it did not work perfectly or failed. Christine Darden and Gloria Champine from Langley’s Equal Opportunity Office proved the gender inequality at Langley and visualized it effectivly communicate that the institution did not promote women as much as men did even when they had identical academic credentials and job performance. As a result, the institution promoted Darden and took a step forward for equal opportunity. While data scientists take pride in creating a product that is convincing but not misleading simultaneously, we sometimes forget about the background story of the data. A smith alumnae, Betty Friedan did not consider how multiple dimensions of identity such as gender, race, class, etc would interact with each other when discussing feminism. Understanding all the behindstory of the data and how they relate to the message we want to deliver are difficult and burdensome, yet given the power of what data science can do, it is a needed task. <em>Data Feminism</em> taught me one of the important responsibities as a data scientists.</p>
 
 
 
@@ -427,7 +418,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -466,7 +457,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
