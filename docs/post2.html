@@ -11,9 +11,8 @@
 
 
 
-<title>My second story</title>
+<title>The Process of Eliminating Discriminations</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -26,15 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 
 
@@ -65,7 +55,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -345,21 +334,21 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fas fa-home"></span>
+    <span class="fa fa-home"></span>
      
     Home
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fas fa-user-check"></span>
+    <span class="fa fa-user-check"></span>
      
     About Me
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fas fa-newspaper"></span>
+    <span class="fa fa-newspaper"></span>
      
     Blog
      
@@ -378,25 +367,25 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:bbaumer@smith.edu">
-    <span class="fas fa-envelope"></span>
+    <span class="fa fa-envelope"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.github.com/beanumber">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.twitter.com/BaumerBen">
-    <span class="fas fa-twitter"></span>
+    <span class="fa fa-twitter"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/ben-baumer-809b3a75">
-    <span class="fas fa-linkedin"></span>
+    <span class="fa fa-linkedin"></span>
      
   </a>
 </li>
@@ -409,12 +398,14 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">My second story</h1>
+<h1 class="title toc-ignore">The Process of Eliminating Discriminations</h1>
 
 </div>
 
 
-<p>It was the best of times, it was the worst of times…</p>
+<p>I have always wondered if voicing the problems minority groups face, fighting against the oppressive system, and figuring out the way to improve the situation are the responsibilities of the minority people, because, as <em>Data Feminism</em> states, “those who occupy positions of privilege in society are able to remain innocent of the privilege.” While there are many exceptions, especially in Japan, feminism is often thought of as an idea that is important and beneficial mostly for women. Racism is thought to be non-existant in a mostly homegeneous society when historically numbers of different ethnic groups have been living in Japan for centuries. The power chapter in <em>Data Feminism</em> helped me organize my thoughts about the process of eliminating discriminations.</p>
+<p>I tend to hold an optimistic view; for the gender, race, and other social issues, I believe that fixing the problems will give people, not only the minoritized ones, but also the majority people, more freedom about the choices they make in their lifetime, regardless of their gender, race, or any other identity or background. However, the people who currently hold the power to change the situation mostly are male, white people with wealthy backgrounds. As the chapter mentioned, although those people at the top may not have malicious intentions, they may be oppressing the minoritized group unintentionally and not notice the fact. In order to prevent privilege hazards, diversity of the people in the organizations are cruicial. Despite the need, the number of students studying Computer Science who may be able to fix the current version of technology to respect more diversity in the future has been declining since 1984. We discussed in a group how we can give an impact to society without waiting for the number of female Computer Science students to increase decades later.</p>
+<p>The chapter also explained four domains of the matrix of domination and how Joy Buolamwini and other inspiring individuals have tackled the social issues via one or more of the domains. While even an idealistic person believes that there is a long way to go, by analyzing problems and breaking them down into domains, I felt that it seems much clearer what are some steps required for a change. The question I have now is whether the success rate will change depending on the order of dealing with the domain.</p>
 
 
 
@@ -427,7 +418,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -466,7 +457,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
