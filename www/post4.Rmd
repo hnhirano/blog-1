@@ -1,0 +1,13 @@
+---
+title: "Data Visualization and Data Collection"
+output: html_document
+---
+
+“Should a visualization be designed to evoke emotion?” Chapter 3 of *Data Feminism* discusses how data scientists should visualize data. The group of people who believe that data visualization should present the necessary information with minimum design claims that the plain style will allow the viewers more freedom to choose their own response to the data displayed. To them, data visualization is the unempathetic art. On the other hand, the people who believe that data visualization can have an editorial hand oppose the former argument stating that “a rhetorical dimension is present in every design.”
+
+I consider data science/ data visualization has always been a tool to strengthen an argument and is a tool to communicate the message efficiently, thus, I believe data scientists can intend to evoke emotions through visualizations. Since all visualizations, at this point, are all made by human-beings, while it may be possible to reduce the emotional components of visualizations, creating purely neutral visualization, which completely gives the audiences to choose how they feel about them, is impossible. 
+
+Yet simultaneously, I agree with the point made by Donna Haraway, “[data visualizaiton] makes the viewers believe that they can see everything, all at once, from on imagery and impossible standpoint.” Since some people collected the data because they are interested in, cleaned the data to focus on certain aspects of the data, and created visualizations to inform others about the topic, data visualization always illustrates a partial perspective of the creators. Data scientists definitely need to recognize this fact and the risk of misinterpretation and misinformation. 
+
+Chapter 4 is about data collection and specifically who is collecting the data, who gets counted, and who is not being counted. Again, this further emphasizes the importance of data scientists being mindful about the context of the data. As this chapter particularly focuses on data collection, I thought about the datasets my group use for the Capstone project. Our datasets are about the performance of students, and some variables are divided by their demographics. Because these are sensitive information to especially the minority students, a few of the numbers are suppressed and not available to us. While our interest is to figure out how the performance of students relate to external variables and we are also interested in how the students’ demographics and the external factors intersect, the privacy and the safety of the students should be priotized. I want to make sure that each one of us will be aware of context and the impact the project may have for the students. 
+
