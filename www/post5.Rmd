@@ -1,0 +1,10 @@
+---
+title: "Embracing Pluralism"
+output: html_document
+---
+
+Embracing pluralism, that data scientists need to value many perspectives at all stages of their work, was the main message of chapter 5 of *Data Feminism*. The authors convey the message that every person has their own particular standpoint, and nobody can be truly objective. For example, for data collection, the authors stated that “data scientists must proceed with an awareness of context and an analysis of power in the collection environment.” At this point, I think I understood the reason why data scientists must consider the context of the data and the perspectives of others. I also realized how complex the work of data scientists can and should be.
+
+While many of the ideas introduced in this chapter were already familiar to me, when the authors questioned and opposed the common belief in the world of data science that data should be cleaned and controlled the idea stucked me the most and I was surprised. Conducting analyses and presenting findings will become easier if we have cleaned data. I have always tried to clean the data in a way later analyses will become straightforward. I have never even thought about a case when that is not welcomed. The authors argue “the ideas underlying the belief that data should always be clean and controlled have tainted historical roots,” because the belief assumes that there is a correct order in which data should be organized. 
+
+The other day, I was talking with my friends about how important making sure the assumptions and the interpretations of them are during discussions. This applies to data science as well. When collecting data, manipulating data, conducting analyses, and creating visualizations, data scientists need to go back to the basic questions. Who does the work? What is the context of the data? Who may benefit and be harmed from the work? Who are the stakeholders? As we strive to embrace pluralism, our work can become more valuable. 
